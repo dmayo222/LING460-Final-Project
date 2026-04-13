@@ -293,7 +293,7 @@ print(jake3)
 #Beginning of Dante's Work:
 #First Ilia Malinin Article
 page1_malinin <- read_html("https://www.espn.com/olympics/figureskating/story/_/id/47922785/quad-god-ilia-malinin-falls-twice-olympic-men-figure-skating-disaster-allowing-mikhail-shaidorov-claim-gold")
-paras1_malinin <- page |>
+paras1_malinin <- page1_malinin |>
   html_elements("article p") |>
   html_text2()|>
   paste(collapse = " ") |>
